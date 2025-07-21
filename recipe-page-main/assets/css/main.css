@@ -1,0 +1,139 @@
+@font-face {
+  font-family: 'outfit';
+  src: url('../fonts/outfit/Outfit-VariableFont_wght.ttf')
+}
+
+@font-face {
+  font-family: 'young-serif';
+  src: url('../fonts/young-serif/YoungSerif-Regular.ttf');
+}
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --stone-100:  hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+  
+  --brown-800: hsl(14, 45%, 36%);
+  
+  --rose-800: hsl(332, 51%, 32%);
+  --rose-50: hsl(330, 100%, 98%);
+}
+
+body {
+  font-family: 'outfit';
+  background-color: var(--stone-100);
+}
+
+.header {
+  font-family: 'young-serif';
+  font-size: 32px;
+  line-height: 0px;
+  color: var(--stone-900);
+}
+
+.bounding {
+  padding: 0px 6px
+}
+
+.text {
+  color: var(--stone-600);
+  font-size: 14px;
+}
+
+.card {
+  background-color: var(--white);
+  border-radius: 16px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 560px;
+  padding: 28px;
+}
+
+.img-card {
+  border-radius: 16px;
+  margin: auto;
+  width: 550px;
+  height: 250px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding-top: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid  #efefef;
+  div {
+    padding-left: 24px;
+  }
+  .cals {
+    color: var(--brown-800);
+    font-weight: 600;
+  }
+}
+
+.preparation {
+  padding: 20px 20px 8px 20px; 
+  margin: 10px 0px 0px 0px;
+  background-color: var(--rose-50);
+  border-radius: 12px;
+  .title {
+    color: var(--rose-800);
+    font-weight: 600;
+  }
+  .subtitle {
+    color: var(--stone-600);
+    font-weight: 600;
+    margin-left: 10px;
+  }
+  ul {
+    margin-top: 6px;
+    margin-left: -16px;
+  }
+  li {
+    margin-bottom: 8px;
+    padding-left: 0px;
+  }
+  li::marker {
+    color: var(--rose-800)
+  }
+}
+
+.ingredient, .nutrition, .instruction {
+  padding: 8px 0px;
+  .title {
+    color: var(--brown-800);
+    font-weight: 600;
+    font-family: 'young-serif';
+    font-size: 20px;
+    padding-bottom: 12px;
+  }
+  .subtitle {
+    color: var(--stone-600);
+    font-weight: 600;
+  }
+  ul {
+    margin-top: 6px;
+    margin-left: -20px;
+  }
+  ol {
+    margin-top: 6px;
+    margin-left: -16px;
+  }
+  li {
+    margin-bottom: 8px;
+    padding-left: 0px;
+  }
+  li::marker {
+    font-weight:bold;
+    color: var(--brown-800);
+  }
+}
+
+.ingredient, .instruction {
+  border-bottom: 1px solid #efefef;
+}
+
